@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox styleClass="home" alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.throyer.simple.controllers.HomeController">
+    <stylesheets>
+        <URL value="@/styles/home.css"/>
+    </stylesheets>
+    <children>
+        <Label text="Press button to change to another controller" />
+        <Button fx:id="button" text="Switch to Secondary View" onAction="#change"/>
+     </children>
+</VBox>
