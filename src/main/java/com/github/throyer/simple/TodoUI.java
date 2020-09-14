@@ -2,19 +2,16 @@ package com.github.throyer.simple;
 
 import com.github.throyer.simple.events.StageReadyEvent;
 import com.github.throyer.simple.utils.FXMLReader;
-import java.io.IOException;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import javafx.application.Application;
 import javafx.application.Platform;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @ComponentScan
 @EnableJpaRepositories("com.github.throyer.simple.repositories")

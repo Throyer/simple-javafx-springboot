@@ -7,10 +7,9 @@ package com.github.throyer.simple.models;
 
 import java.io.Serializable;
 import java.util.Objects;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -21,6 +20,8 @@ import javax.persistence.Id;
  */
 @Entity
 public class Category implements Serializable {
+
+    private static final long serialVersionUID = 8433611021436439711L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

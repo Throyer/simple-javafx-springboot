@@ -7,18 +7,17 @@ import com.github.throyer.simple.models.Category;
 import com.github.throyer.simple.models.Situation;
 import com.github.throyer.simple.models.Task;
 import com.github.throyer.simple.repositories.CategoryRepository;
-import com.github.throyer.simple.repositories.TaskRepository;
-import javafx.collections.FXCollections;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
-import org.springframework.beans.factory.annotation.Autowired;
 
 @Component
 public class HomeController implements Initializable {
@@ -26,8 +25,8 @@ public class HomeController implements Initializable {
     @Autowired
     private CategoryRepository categoryRepository;
 
-    @Autowired
-    private TaskRepository repository;
+    // @Autowired
+    // private TaskRepository repository;
 
     @FXML
     private TableView<Task> tabela;
@@ -50,8 +49,6 @@ public class HomeController implements Initializable {
         gabiarra();
         
         var categories = categoryRepository.findAll();
-        
-        fieldTaskName.setText(Situation.TO_DO.toString());
         
         fieldCategory.setItems(FXCollections.observableList(categories));        
         fieldSituation.setItems(FXCollections.observableArrayList(Situation.values()));
