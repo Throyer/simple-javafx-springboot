@@ -1,26 +1,27 @@
 ## Exemplo de projeto simples em JavaFX com Spring boot
+Esta é uma aplicação simples feita com Spring Boot + Java FX
 
-Uma aplicação com JavaFX e Spring boot.
+- #### como baixar dependencias
+  ```shell
+  mvn install -DskipTests
+  ```
 
-### como utilizar
-```shell
-# Baixe as dependencias (o parametro -DskipTests pula os testes)
-$ mvn install -DskipTests
+- #### como rodar a aplicação
+  ```shell
+  mvn spring-boot:run
+  ```
 
-# Rode a aplicação
-$ mvn spring-boot:run
+- #### como rodar os testes
+  ```shell
+  mvn test
+  ```
 
-# Para rodar os testes
-$ mvn test
+- #### como fazer o build do pacote
+  ```shell
+  mvn clean package
+  ```
 
-# Para gerar o relatorio de cobertura apos os testes (fica disponivel em: target/site/jacoco/index.html)
-$ mvn jacoco:report
-
-# Para buildar para produção
-$ mvn clean package
-
-# depois de buildar, a aplicação pode ser executada com o seguinte comando
-$ java -jar simple-X.X.X-X
-
-# lembre-se de subistituir os X pela versão mais atual (em pom.xml)
-```
+- #### executando aplicação depois do build
+  ```shell
+  java -jar target/ui*.jar
+  ```
