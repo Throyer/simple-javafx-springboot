@@ -1,11 +1,11 @@
-package com.github.throyer.ui.controllers;
+package com.github.throyer.sample.ui.controllers;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
 import org.springframework.stereotype.Component;
 
-import com.github.throyer.ui.shared.MyCustomBean;
+import com.github.throyer.sample.domain.sample.services.SampleService;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -14,24 +14,24 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Component
-public class HomeController implements Initializable {
-  public HomeController(MyCustomBean bean) {
+public class FeaturesController implements Initializable {
+  public FeaturesController(SampleService bean) {
     this.bean = bean;
   }
 
-  private final MyCustomBean bean;
-  
+  private final SampleService bean;
+
   @FXML
   private Button button;
-  
+
   @Override
   public void initialize(URL url, ResourceBundle rb) {
-    
+
     button.setOnAction(event -> {
       log.info("clicou no botão hello");
       log.info(bean.getMessage());
     });
 
-    log.info("initialize home controller");
+    log.info("initialize features controller");
   }
 }

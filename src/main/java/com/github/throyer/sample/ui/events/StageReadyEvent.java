@@ -1,4 +1,4 @@
-package com.github.throyer.ui.events;
+package com.github.throyer.sample.ui.events;
 
 import org.springframework.context.ApplicationEvent;
 

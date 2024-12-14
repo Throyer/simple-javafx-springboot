@@ -1,4 +1,4 @@
-package com.github.throyer.ui;
+package com.github.throyer.sample;
 
 import static javafx.application.Platform.exit;
 import static org.springframework.boot.SpringApplication.run;

@@ -1,4 +1,4 @@
-package com.github.throyer.ui;
+package com.github.throyer.sample;
 
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -14,7 +14,6 @@ import org.springframework.test.context.TestPropertySource;
   "spring.datasource.password=sa",
 })
 @SpringBootTest
-@AutoConfigureTestDatabase
 class MainTests {
 	@Test
 	void contextLoads() { }
