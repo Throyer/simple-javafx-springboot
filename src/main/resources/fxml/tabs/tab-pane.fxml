@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane
+  VBox.vgrow="ALWAYS"
+  xmlns:fx="http://javafx.com/fxml/1"
+  xmlns="http://javafx.com/javafx/8"
+>
+  <opaqueInsets>
+    <Insets/>
+  </opaqueInsets>
+  <children>
+    <TabPane
+      prefHeight="368.0"
+      prefWidth="640.0"
+      tabClosingPolicy="UNAVAILABLE"
+      AnchorPane.bottomAnchor="0.0"
+      AnchorPane.leftAnchor="0.0"
+      AnchorPane.rightAnchor="0.0"
+      AnchorPane.topAnchor="0.0"
+    >
+      <tabs>
+        <fx:include source="home.fxml"/>
+        <fx:include source="features.fxml"/>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>

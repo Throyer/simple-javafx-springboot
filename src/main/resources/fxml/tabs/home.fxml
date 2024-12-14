@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Tab
+  text="Home"
+  xmlns="http://javafx.com/javafx/8.0.171"
+  xmlns:fx="http://javafx.com/fxml/1"
+  fx:controller="com.github.throyer.ui.controllers.HomeController"
+>
+  <VBox
+    styleClass="home"
+    alignment="CENTER"
+    spacing="20.0"
+  >
+    <stylesheets>
+      <URL value="@/styles/home.css"/>
+    </stylesheets>
+    <Label text="home tab"/>
+    <Button fx:id="button" text="hello button"/>
+  </VBox>
+</Tab>

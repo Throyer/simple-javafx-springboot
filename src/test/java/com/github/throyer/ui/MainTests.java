@@ -15,7 +15,7 @@ import org.springframework.test.context.TestPropertySource;
 })
 @SpringBootTest
 @AutoConfigureTestDatabase
-class AppApplicationTests {
+class MainTests {
 	@Test
 	void contextLoads() { }
 }
